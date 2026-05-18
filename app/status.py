@@ -4,8 +4,6 @@ status.py
 This module collects current system status information:
 - CPU usage
 - RAM usage
-- disk usage
-- network I/O
 - timestamp
 
 It is used by:
@@ -64,7 +62,7 @@ def get_status_csv_row() -> list[Any]:
     This is useful for writing one row into log.csv.
     """
     status = get_system_status()
-    
+
     return [
         status["timestamp"],
         status["cpu_percent"],
