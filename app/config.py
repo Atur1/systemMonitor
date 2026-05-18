@@ -60,11 +60,11 @@ def get_str(name: str, default: str) -> str:
 
 
 # Web Server configuration
-WEB_SERVER_HOST = get_str("WEB_SERVER_HOST", "0.0.0.0")
+WEB_SERVER_HOST = get_str("WEB_SERVER_HOST", "127.0.0.1")
 WEB_SERVER_PORT = get_int("WEB_SERVER_PORT", 8000)
 
 # TCP Server configuration
-TCP_SERVER_HOST = get_str("TCP_SERVER_HOST", "0.0.0.0")
+TCP_SERVER_HOST = get_str("TCP_SERVER_HOST", "127.0.0.1")
 TCP_SERVER_PORT = get_int("TCP_SERVER_PORT", 9000)
 
 # Logging configuration
