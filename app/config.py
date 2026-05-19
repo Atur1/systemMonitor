@@ -70,7 +70,7 @@ TCP_SERVER_PORT = get_int("TCP_SERVER_PORT", 9000)
 # Logging configuration
 LOG_DIR = Path(get_str("LOG_DIR", "logs"))
 LOG_FILE = get_str("LOG_FILE", "log.csv")
-LOG_MAX_BYTES = get_int("MAX_LOG_SIZE_MB", 5 * 1024 * 1024) # Convert MB to bytes 
+LOG_MAX_BYTES = get_int("MAX_LOG_SIZE_MB", 5)  * 1024 * 1024 # Convert MB to bytes 
 LOG_WRITE_INTERVAL_SECONDS = get_float("LOG_WRITE_INTERVAL_SECONDS", 2.0)
 
 # Full path to the active CSV log file

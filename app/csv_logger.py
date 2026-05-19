@@ -110,7 +110,7 @@ async def start_csv_logger() -> None:
     data to the CSV file. It also checks if log rotation is needed before each write.
     """
     ensure_log_dir_exists()
-    write_csv_header_if_needed
+    write_csv_header_if_needed()
 
     print(f"CSV logger started: {LOG_FILE_PATH}")
 
