@@ -1,6 +1,15 @@
 .venv/
 .env
+
 logs/
+dist/
+build/
+.pyarmor/
+*.spec
+
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
 .DS_Store
